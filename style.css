@@ -22,6 +22,59 @@
        margin-top: 50px;
 }
 
+.btld {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.Ck_LD{
+    position: absolute;
+    left: -9999px;
+
+}
+
+.Label_botao{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    padding:  20px;
+ }
+
+ .Label_botao::before,
+ .Label_botao::after
+ {
+content:"";
+
+ }
+.Label_botao::before{
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+    background-color: rgb(250, 57, 57);
+    border-radius: 2em;
+}
+.Label_botao::after{
+position: absolute;
+top: 1.35em;
+left: 1.50em;
+width: 1.8em;
+height: 1.8em;
+background: rgb(255, 255, 255);
+border-radius: 100%;
+}
+
+.Ck_LD:checked + .Label_botao::before{
+    background: rgb(129, 228, 99);
+}
+
+.Ck_LD:checked + .Label_botao::after{
+left: 3.2em;
+
+}
+
+
 .efeito {
 
         border: none;
@@ -62,7 +115,7 @@
                 
 }
 
-.efeito-1:hover::before{
+.efeito-1:hover:before{
 
                         width: 100%;
 
